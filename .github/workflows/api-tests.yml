@@ -22,4 +22,4 @@ jobs:
         run: npm install -g newman
 
       - name: Uruchomienie kolekcji testów API
-        run: newman run ./api-tests/Ecommerce_API_Tests.json
+        run: newman run ./api-tests/Ecommerce_API_Tests.postman_collection.json
