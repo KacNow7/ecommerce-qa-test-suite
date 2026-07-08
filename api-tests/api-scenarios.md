@@ -24,6 +24,10 @@ Plik z pełną kolekcją (`.json`) gotową do zaimportowania w Postmanie znajduj
       "username" : "admin",
       "password" : "password123"
   }
+  ```
+* **Zastosowane asercje w Postmanie:**
+  * Sprawdzenie, czy kod odpowiedzi (Status Code) to `200 OK`.
+  * Weryfikacja, czy odpowiedź zawiera wygenerowany ciąg znaków (token).
 
 ### 3. Błędna autoryzacja (Ścieżka negatywna)
 * **Metoda:** `POST`
@@ -35,3 +39,6 @@ Plik z pełną kolekcją (`.json`) gotową do zaimportowania w Postmanie znajduj
       "username" : "admin",
       "password" : "wrong_password"
   }
+  ```
+  * **Zastosowane asercje w Postmanie:**
+  * Sprawdzenie, czy odpowiedź serwera zawiera komunikat błędu (np. Bad credentials).
