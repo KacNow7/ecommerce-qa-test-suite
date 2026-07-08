@@ -8,7 +8,7 @@
   },
   "item": [
     {
-      "name": "New Request",
+      "name": "GET Rezerwacje",
       "event": [
         {
           "listen": "test",
@@ -43,18 +43,60 @@
       "response": []
     },
     {
-      "name": "New Request",
+      "name": "POST Logowanie Poprawne",
       "request": {
-        "method": "GET",
-        "header": []
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\" : \"admin\", \"password\" : \"password123\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://restful-booker.herokuapp.com/auth",
+          "protocol": "https",
+          "host": [
+            "restful-booker",
+            "herokuapp",
+            "com"
+          ],
+          "path": [
+            "auth"
+          ]
+        }
       },
       "response": []
     },
     {
-      "name": "New Request",
+      "name": "POST Logowanie Bledne",
       "request": {
-        "method": "GET",
-        "header": []
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"wrong_password\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://restful-booker.herokuapp.com/auth",
+          "protocol": "https",
+          "host": [
+            "restful-booker",
+            "herokuapp",
+            "com"
+          ],
+          "path": [
+            "auth"
+          ]
+        }
       },
       "response": []
     }
