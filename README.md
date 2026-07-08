@@ -15,23 +15,24 @@ Projekt ma na celu zaprezentowanie mojego warsztatu jako Młodszego Testera Manu
 
 Poniżej znajdziesz bezpośrednie linki do najważniejszych elementów mojego procesu testowego:
 
-### 1. Planowanie i Strategia
-* [Plan Testów (Test Plan)](./test-plan/test-plan.md) - Zakres, środowisko i kryteria akceptacji.
-
-### 2. Przypadki Testowe UI (Test Cases)
+### 1. Dokumentacja Testów UI
+* [Plan Testów (Test Plan)](./test-plan/test-plan.md)
 * [Moduł Logowania](./test-cases/login-tests.md)
 * [Katalog Produktów i Sortowanie](./test-cases/inventory-tests.md)
 * [Zarządzanie Koszykiem](./test-cases/cart-tests.md)
-* [Proces Zakupowy (Checkout)](./test-cases/checkout-tests.md) *(Zawiera przypadek negatywny z krytycznym błędem)*
+* [Proces Zakupowy (Checkout)](./test-cases/checkout-tests.md) *(Błąd Krytyczny!)*
 * [Bezpieczeństwo i Sesja](./test-cases/security-tests.md)
+* [Testy Responsywności (iPhone / Mobile)](./test-cases/mobile-tests.md)
 
-### 3. Raportowanie Błędów (Bug Tracking)
-Wykryte błędy są na bieżąco raportowane w systemie śledzenia.
-* [Zobacz zgłoszone błędy (GitHub Issues)](../../issues)
+### 2. Poza Utartym Szlakiem (Bazy danych i Exploratory)
+* [Karta Testów Eksploracyjnych (Exploratory Session)](./exploratory-testing/session-01.md)
+* [Weryfikacja defektów w bazie (SQL)](./database-queries/sql-examples.md)
 
-### 4. Testy API (Postman)
+### 3. Zgłaszanie Błędów
+* [Zobacz profesjonalnie zgłoszony Bug (GitHub Issues)](../../issues)
+
+### 4. Testy API (RESTful Booker)
 * [Dokumentacja Scenariuszy API](./api-tests/api-scenarios.md)
-* [Kolekcja Postman do pobrania (.json)](./api-tests/Ecommerce_API_Tests.json)
 
 ### 5. Podsumowanie
-* [Raport z Wykonania Testów (Test Execution Summary)](./test-execution-summary.md) - Wyniki kampanii testowej i ostateczna rekomendacja wdrożeniowa (Go/No-Go).
+* [Raport z Wykonania Testów i Rekomendacja (Test Execution Summary)](./test-execution-summary.md)

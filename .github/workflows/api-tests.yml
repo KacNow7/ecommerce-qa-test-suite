@@ -1,0 +1,25 @@
+name: Automated API Tests (Postman/Newman)
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: # Uruchamianie testów ręcznie
+
+jobs:
+  run-api-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pobranie kodu repozytorium (Checkout)
+        uses: actions/checkout@v3
+
+      - name: Instalacja środowiska Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Instalacja Newman (Narzędzie CLI dla Postmana)
+        run: npm install -g newman
+
+      - name: Uruchomienie kolekcji testów API
+        run: newman run ./api-tests/Ecommerce_API_Tests.json
